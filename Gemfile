@@ -49,9 +49,10 @@ group :development do
   gem 'binding_of_caller' #binding of caller
 end
 
-#Report all errors
-gem 'airbrake'
-gem 'haml'
+
+gem 'airbrake' #Report all errors
+gem 'haml' #HAML templates by default
+gem 'squeel' #nice queries
 
 group :production do
   gem 'rails_12factor' #heroku support
