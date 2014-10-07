@@ -51,20 +51,20 @@ group :development do
   gem 'puma' #multithread server
   #active admin for dev with default user: admin@example.com/password
   gem 'activeadmin', github: 'activeadmin'
-  gem 'devise'
 end
 
 group :test do
   gem 'dotenv-rails'
   #active admin for dev with default user: admin@example.com/password
   gem 'activeadmin', github: 'activeadmin'
-  gem 'devise'
 end
 
 
 gem 'airbrake' #Report all errors
 gem 'haml' #HAML templates by default
 gem 'squeel' #nice queries
+gem 'devise' #default User model
+
 
 group :production do
   gem 'rails_12factor' #heroku support
