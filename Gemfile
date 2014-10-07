@@ -47,4 +47,5 @@ gem 'airbrake'
 
 group :production do
   gem 'rails_12factor' #heroku support
+  gem 'unicorn'
 end
