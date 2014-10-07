@@ -44,3 +44,7 @@ end
 
 #Report all errors
 gem 'airbrake'
+
+group :production do
+  gem 'rails_12factor' #heroku support
+end
