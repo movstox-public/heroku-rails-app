@@ -47,6 +47,18 @@ group :development do
   gem 'sextant' #view routes at /rails/routes
   gem 'better_errors' #better errors
   gem 'binding_of_caller' #binding of caller
+
+  gem 'puma' #multithread server
+  #active admin for dev with default user: admin@example.com/password
+  gem 'activeadmin', github: 'activeadmin'
+  gem 'devise'
+end
+
+group :test do
+  gem 'dotenv-rails'
+  #active admin for dev with default user: admin@example.com/password
+  gem 'activeadmin', github: 'activeadmin'
+  gem 'devise'
 end
 
 
