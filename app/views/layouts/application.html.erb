@@ -7,8 +7,32 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
+<!-- notices section -->
+<% unless notice.nil? %>
+    <div class="alert alert-success alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <%=notice%>
+    </div>
+<% end %>
+<!-- notices section -->
+
+<!-- alerts section -->
+<% unless alert.nil? %>
+    <div class="alert alert-warning alert-dismissible" role="alert">
+      <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+      <%=alert%>
+    </div>
+<% end %>
+<!-- alerts section -->
+
+<!-- user menu section -->
+<% if user_signed_in? %>
+    <%= link_to 'Profile', edit_user_registration_path %>
+    <%= link_to 'Logout', destroy_user_session_path %>
+<% else %>
+    <%= link_to 'Sign in', new_user_session_path %>
+<% end %>
+<!-- user menu section -->
 
 <%= yield %>
 

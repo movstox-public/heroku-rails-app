@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
 
+  root 'public#index'
+
+  devise_for :users
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
 
-  root 'public#index'
+  mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
