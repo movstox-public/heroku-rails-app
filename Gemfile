@@ -40,6 +40,10 @@ group :development do
   gem 'spring'
   gem 'dotenv-rails'
   gem 'letter_opener_web', '~> 1.2.0'
+
+  gem 'sextant' #view routes at /rails/routes
+  gem 'better_errors' #better errors
+  gem 'binding_of_caller' #binding of caller
 end
 
 #Report all errors
