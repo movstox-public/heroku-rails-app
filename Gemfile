@@ -40,3 +40,6 @@ group :development do
   gem 'spring'
   gem 'dotenv-rails'
 end
+
+#Report all errors
+gem 'airbrake'
