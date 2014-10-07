@@ -23,3 +23,6 @@
 
 #ignore db config
 config/database.yml
+
+#ignore precompiled assets
+public/assets
