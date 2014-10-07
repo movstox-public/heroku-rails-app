@@ -20,3 +20,6 @@
 
 #locally set up env vars with dotenv
 .env
+
+#ignore db config
+config/database.yml
