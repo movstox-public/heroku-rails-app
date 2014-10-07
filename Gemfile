@@ -51,6 +51,7 @@ end
 
 #Report all errors
 gem 'airbrake'
+gem 'haml'
 
 group :production do
   gem 'rails_12factor' #heroku support
